@@ -1,0 +1,50 @@
+.footer {
+  background-color: $footercolor;
+  padding: 60px 0;
+  display: flex;
+  align-content: flex-start;
+}
+
+.footer__left {
+  display: block;
+  align-content: flex-start;
+}
+.address {
+  font-style: normal;
+  margin-bottom: 27px;
+  margin-right: 0px;
+}
+
+.footer__sections {
+  display: flex;
+  align-items: baseline;
+}
+.footer__middle {
+  margin-left: 70px;
+}
+.address__list {
+  display: block;
+  width: 250px;
+  margin: 0px;
+}
+
+.address__phone {
+  display: block;
+}
+
+.footer__social-list {
+  display: flex;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.email__items {
+  display: flex;
+  position: relative;
+}
+
+.footer__right {
+  margin-left: auto;
+}

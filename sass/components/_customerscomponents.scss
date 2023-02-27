@@ -1,0 +1,33 @@
+.customers__title {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: $boldweight;
+  font-size: 36px;
+  line-height: 1.172;
+  color: $maindark;
+  letter-spacing: 0.03em;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+}
+.customers__icon {
+  fill: currentColor;
+}
+.customers__link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  border: solid 1px $bordercolorcustomers;
+  border-radius: 4px;
+  color: $bordercolorcustomers;
+  justify-content: center;
+  align-items: center;
+  transition-property: color, border-color;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+  &:hover,
+  &:focus {
+    border-color: $accentbright;
+    color: $accentbright;
+  }
+}

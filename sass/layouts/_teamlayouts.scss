@@ -1,0 +1,18 @@
+.team {
+  background-color: $accentbackground;
+  padding: 94px 0;
+}
+
+.team__social-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__social-item:not(:last-child) {
+  margin-right: 10px;
+}

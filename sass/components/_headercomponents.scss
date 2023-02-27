@@ -1,0 +1,72 @@
+.contact__icon {
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+}
+.header__logo {
+  color: $accentbright;
+  font-family: raleway;
+  font-size: 26px;
+  font-weight: $boldweight;
+  line-height: 1.174;
+  margin-right: 97px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+}
+
+.header__link {
+  color: $maindark;
+  font-size: 14px;
+  font-weight: $midweight;
+  line-height: 1.172;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  transition-property: color;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accentbright;
+  }
+}
+
+.header__link--active {
+  color: $accentbright;
+  position: relative;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 8px;
+    border-radius: 3px;
+    background-color: $accentbright;
+  }
+}
+.contact__link {
+  color: $mainmid;
+  font-size: 14px;
+  font-weight: $midweight;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accentbright;
+  }
+}
+

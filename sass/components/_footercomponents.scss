@@ -1,0 +1,130 @@
+.footer__logo {
+  color: $accentbright;
+  font-family: raleway;
+  font-size: 26px;
+  font-weight: $boldweight;
+  line-height: 1.174;
+  display: block;
+  margin-bottom: 9px;
+}
+
+.address__link {
+  color: $mainbright;
+  font-weight: $lightweight;
+  line-height: 1.71;
+  font-family: roboto;
+}
+
+.address__contact {
+  color: $mainbright;
+  opacity: 0.6;
+  line-height: 1.71;
+  font-weight: $lightweight;
+  font-family: roboto;
+}
+
+.footer__social-title {
+  color: $mainbright;
+  font-family: roboto;
+  font-weight: $boldweight;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.footer__social-link {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $mainbright;
+  fill: currentColor;
+  background: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+  &:hover,
+  &:focus {
+    background-color: $accentbright;
+  }
+}
+.footer__social-icon {
+  fill: currentColor;
+}
+
+.email__label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: $boldweight;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $mainbright;
+}
+
+.email__input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: $lightweight;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  background-color: $footercolor;
+  box-sizing: border-box;
+  margin-top: 20px;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  outline: none;
+  color: $mainbright;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.email__button {
+  margin-top: 20px;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  background-color: $accentbright;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: $boldweight;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: $mainbright;
+  &:hover,
+  &:focus {
+    color: $accentbright;
+    background-color: $accentbackground;
+    border: solid 1px $accentbright;
+    fill: $accentbright;
+  }
+  &:hover > .email__svg {
+    fill: $accentbright;
+  }
+  &:focus > .email__svg {
+    fill: $accentbright;
+  }
+}
+
+.email__svg {
+  fill: $mainbright;
+  position: absolute;
+  top: 33px;
+  left: 518px;
+}

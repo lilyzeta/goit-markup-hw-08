@@ -1,0 +1,23 @@
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header {
+  background-color: $mainbright;
+  border-bottom: 1px solid $bordercolor;
+}
+.header__list {
+  display: flex;
+}
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__list {
+  margin-left: auto;
+  display: flex;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 30px;
+}

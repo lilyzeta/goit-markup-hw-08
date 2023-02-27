@@ -1,0 +1,39 @@
+/* Overall Site Styles: Header, Buttons, Footer */
+/* General Site Styles */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+a:link:active {
+  cursor: pointer;
+}
+a:link {
+  text-decoration: none;
+}
+
+body {
+  font-family: roboto;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+}
+
+button {
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Remove Global Styling*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,12 @@
+.customers {
+  padding: 94px 0;
+}
+
+.customers__list {
+  display: flex;
+  justify-content: center;
+}
+
+.customers__item:not(:last-child) {
+  margin-right: 30px;
+}

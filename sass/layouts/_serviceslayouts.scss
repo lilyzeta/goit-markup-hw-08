@@ -1,0 +1,23 @@
+.services {
+  padding-bottom: 94px;
+}
+
+.services__list {
+  display: flex;
+}
+.services__item {
+  justify-content: center;
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.services-overlay__box {
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  position: absolute;
+  bottom: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}

@@ -1,0 +1,16 @@
+.features__subtitle {
+  font-weight: $boldweight;
+  line-height: 1.172;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: $maindark;
+  margin-bottom: 10px;
+}
+
+.features__description {
+  color: $mainmid;
+  font-weight: $lightweight;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}

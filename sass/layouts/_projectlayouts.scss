@@ -1,0 +1,26 @@
+.project__section {
+  padding: 94px 0;
+}
+
+.project__button-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  &:not(:last-child) {
+    margin-right: 9px;
+  }
+}
+
+.project__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * 30px);
+  margin-left: calc(-1 * 30px);
+}
+
+.project__card-image {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
