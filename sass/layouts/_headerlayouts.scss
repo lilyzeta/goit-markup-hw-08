@@ -10,11 +10,7 @@
 .contacts__list {
   margin-left: auto;
   .header__list {
-    display: none;
-
-    @media screen and (min-width: 1200px) {
-      display: flex;
-    }
+    display: flex;
   }
 }
 
