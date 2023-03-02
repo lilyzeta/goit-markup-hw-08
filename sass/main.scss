@@ -3,8 +3,3 @@
 @import "./components/components";
 @import "./layouts/layouts";
 
-@media screen and (max-width: 480px) {
-  .header__container .contacts__list .header__list {
-    display: block;
-  }
-}

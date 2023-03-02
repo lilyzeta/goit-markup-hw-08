@@ -2,14 +2,18 @@
   background-color: $mainbright;
   border-bottom: 1px solid $bordercolor;
 }
-
+.header__container {
+  display: flex;
+  position: relative;
+}
 .header__item:not(:last-child) {
   margin-right: 50px;
 }
 
 .contacts__list {
   margin-left: auto;
-  .header__list {
+  display: none;
+  @media screen and (min-width: 480px) {
     display: flex;
   }
 }
@@ -17,6 +21,36 @@
 .contacts__item:not(:last-child) {
   margin-right: 30px;
 }
-.header__container {
-  display: flex;
+.header__list {
+  display: none;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
+}
+.menu {
+  display: none;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+    fill: $maindark;
+    position: absolute;
+    left: 20%;
+    right: 80%;
+    top: 30%;
+    bottom: 63.33%;
+  }
+}
+.menu:hover {
+  display: none;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+    fill: $accentbright;
+    position: absolute;
+    left: 20%;
+    right: 80%;
+    top: 30%;
+    bottom: 63.33%;
+  }
 }
