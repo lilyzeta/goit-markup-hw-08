@@ -3,7 +3,12 @@
 }
 
 .services__list {
-  display: flex;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .services__item {
   justify-content: center;
@@ -15,9 +20,11 @@
 
 .services-overlay__box {
   background-color: rgba(47, 48, 58, 0.8);
-  width: 370px;
-  position: absolute;
-  bottom: 0px;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    position: absolute;
+    bottom: 0px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
 }

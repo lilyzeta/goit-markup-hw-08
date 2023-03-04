@@ -1,12 +1,15 @@
 .services__title {
-  color: $maindark;
-  font-weight: $boldweight;
-  font-size: 36px;
-  line-height: 1.172;
-  letter-spacing: 0.03em;
-  display: block;
-  text-align: center;
-  margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    color: $maindark;
+    font-weight: $boldweight;
+    font-size: 36px;
+    line-height: 1.172;
+    letter-spacing: 0.03em;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  display: none;
 }
 
 .services-overlay__text {

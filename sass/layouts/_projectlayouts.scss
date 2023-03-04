@@ -6,9 +6,9 @@
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
-  &:not(:last-child) {
-    margin-right: 9px;
-  }
+}
+.project__button:not(:last-child) {
+  margin-right: 9px;
 }
 
 .project__card-list {

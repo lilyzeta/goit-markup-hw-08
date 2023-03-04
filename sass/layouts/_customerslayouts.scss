@@ -3,10 +3,26 @@
 }
 
 .customers__list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.customers__item:not(:last-child) {
-  margin-right: 30px;
+.customers__item {
+  margin-top: 30px;
+  @media screen and (min-width: 480px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-top: 30px;
+    }
+  }
+  @media screen and (min-width: 786px) {
+    &:not:nth-child(n-3) {
+      margin-right: 30px;
+    }
+  }
 }

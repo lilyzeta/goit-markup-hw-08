@@ -2,6 +2,14 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  min-width: 480;
-  max-width: 1200;
+
+  @media screen and (min-width: 480px) {
+    width: 480 px;
+  }
+  @media screen and (min-width: 786px) {
+    width: 786 px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200 px;
+  }
 }

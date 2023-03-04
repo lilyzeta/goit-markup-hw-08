@@ -51,20 +51,3 @@
     background-color: $accentbright;
   }
 }
-.contact__link {
-  color: $mainmid;
-  font-size: 14px;
-  font-weight: $midweight;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: flex;
-  align-items: center;
-  transition-property: color;
-  transition-duration: $time;
-  transition-timing-function: $cubic;
-
-  &:hover,
-  &:focus {
-    color: $accentbright;
-  }
-}
