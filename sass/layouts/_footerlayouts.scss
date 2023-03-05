@@ -19,7 +19,21 @@
 
 .footer__sections {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  @media screen and (min-width: 786px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-left: 76px;
+    padding-right: 89px;
+    justify-content: space-evenly;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 .footer__middle {
   margin-left: 70px;
