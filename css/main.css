@@ -238,6 +238,7 @@ img {
   font-size: 16px;
   line-height: 1.875;
   color: #ffffff;
+  position: relative;
 }
 .email__button:hover, .email__button:focus {
   color: #2196f3;
@@ -250,13 +251,6 @@ img {
 }
 .email__button:focus > .email__svg {
   fill: #2196f3;
-}
-
-.email__svg {
-  fill: #ffffff;
-  position: absolute;
-  top: 33px;
-  left: 518px;
 }
 
 .contact__icon {
@@ -864,6 +858,8 @@ img {
   display: block;
   align-content: flex-start;
   text-align: center;
+  align-items: center;
+  justify-items: center;
 }
 @media screen and (min-width: 1200px) {
   .footer__left {
@@ -927,6 +923,15 @@ img {
   margin-right: 10px;
 }
 
+.footer__social-title {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__social-title {
+    text-align: left;
+  }
+}
+
 .email__items {
   display: flex;
   flex-direction: column;
@@ -936,14 +941,20 @@ img {
   text-align: center;
 }
 
-.email__label {
+.footer__right {
   text-align: center;
 }
-
 @media screen and (min-width: 1200px) {
   .footer__right {
     margin-left: auto;
   }
+}
+
+.email__svg {
+  fill: #ffffff;
+  position: absolute;
+  right: 25px;
+  top: 13px;
 }
 
 .header {

@@ -10,6 +10,8 @@
   display: block;
   align-content: flex-start;
   text-align: center;
+  align-items: center;
+  justify-items: center;
   @media screen and (min-width: 1200px) {
     text-align: left;
   }
@@ -62,6 +64,12 @@
 .footer__social-item:not(:last-child) {
   margin-right: 10px;
 }
+.footer__social-title {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
 
 .email__items {
   display: flex;
@@ -71,11 +79,18 @@
   align-items: center;
   text-align: center;
 }
-.email__label {
-  text-align: center;
-}
+// .email__label {
+//   // text-align: center;
+// }
 .footer__right {
+  text-align: center;
   @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
+}
+.email__svg {
+  fill: $mainbright;
+  position: absolute;
+  right: 25px;
+  top: 13px;
 }
