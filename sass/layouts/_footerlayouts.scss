@@ -27,7 +27,8 @@
   margin-bottom: 53px;
   align-items: center;
   justify-content: center;
-  margin-left: 50px;
+  text-align: center;
+  margin-right: auto;
   @media screen and (min-width: 786px) {
     margin-left: 0px;
   }
@@ -63,8 +64,10 @@
 }
 .address__list {
   display: block;
-  width: 250px;
   margin: 0px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .address__phone {
