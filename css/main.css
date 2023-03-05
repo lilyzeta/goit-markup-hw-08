@@ -596,7 +596,7 @@ img {
 .project__card-item:hover, .project__card-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project__card-item {
+.project__card-item:hover {
   transform: translateY(0px);
   transition: transform 350ms ease;
 }
@@ -645,7 +645,7 @@ img {
   padding-left: 24px;
   padding-right: 24px;
 }
-.project__card-overlay {
+.project__card-overlay:hover {
   transform: translateY(0px);
   transition: transform 350ms ease;
 }
