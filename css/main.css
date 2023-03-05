@@ -940,6 +940,22 @@ img {
   align-items: center;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .email__items {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.email__label {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .email__label {
+    text-align: left;
+  }
+}
 
 .footer__right {
   text-align: center;

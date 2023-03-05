@@ -78,10 +78,18 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
 }
-// .email__label {
-//   // text-align: center;
-// }
+.email__label {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
 .footer__right {
   text-align: center;
   @media screen and (min-width: 1200px) {
