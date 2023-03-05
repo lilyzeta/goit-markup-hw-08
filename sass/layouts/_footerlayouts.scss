@@ -9,6 +9,10 @@
 .footer__left {
   display: block;
   align-content: flex-start;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .address {
@@ -37,7 +41,9 @@
 }
 .footer__middle {
   margin-left: 70px;
-  margin-right: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 .address__list {
   display: block;
@@ -59,9 +65,17 @@
 
 .email__items {
   display: flex;
+  flex-direction: column;
   position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
+.email__label {
+  text-align: center;
+}
 .footer__right {
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }

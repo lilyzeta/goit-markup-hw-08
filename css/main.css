@@ -863,6 +863,12 @@ img {
 .footer__left {
   display: block;
   align-content: flex-start;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__left {
+    text-align: left;
+  }
 }
 
 .address {
@@ -896,7 +902,11 @@ img {
 
 .footer__middle {
   margin-left: 70px;
-  margin-right: 93px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__middle {
+    margin-right: 93px;
+  }
 }
 
 .address__list {
@@ -919,11 +929,21 @@ img {
 
 .email__items {
   display: flex;
+  flex-direction: column;
   position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.footer__right {
-  margin-left: auto;
+.email__label {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__right {
+    margin-left: auto;
+  }
 }
 
 .header {
