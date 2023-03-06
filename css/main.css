@@ -21,6 +21,7 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -302,10 +303,6 @@ img {
   height: 8px;
   border-radius: 3px;
   background-color: #2196f3;
-}
-
-.button__remove {
-  border: 0;
 }
 
 .hero {
@@ -1081,35 +1078,6 @@ img {
   }
 }
 
-.menu {
-  display: none;
-}
-@media screen and (max-width: 480px) {
-  .menu {
-    display: block;
-    fill: #212121;
-    position: absolute;
-    right: 22px;
-    top: 30%;
-    bottom: 63.33%;
-  }
-}
-
-.menu:hover {
-  display: none;
-}
-@media screen and (max-width: 480px) {
-  .menu:hover {
-    display: block;
-    fill: #2196f3;
-    position: absolute;
-    left: 20%;
-    right: 80%;
-    top: 30%;
-    bottom: 63.33%;
-  }
-}
-
 .project__section {
   padding: 94px 0;
 }
@@ -1211,13 +1179,20 @@ img {
 }
 
 .menu__container {
-  position: absolute;
-  width: 480px;
-  height: 796px;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   left: 0px;
   top: 0px;
+  z-index: 999;
+  padding: 30px;
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  transform: translateX(100%);
+}
+
+.menu__container.is-open {
+  transform: translateX(0);
 }
 
 .menu__contacts {
@@ -1329,4 +1304,31 @@ img {
 .menu__link {
   text-decoration: none;
   color: #2196f3;
+}
+
+.button__remove {
+  border: 0;
+}
+
+.menu {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .menu {
+    display: block;
+    fill: #212121;
+    position: absolute;
+    right: 22px;
+    top: 30%;
+    bottom: 63.33%;
+  }
+}
+.menu:hover {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .menu:hover {
+    display: block;
+    fill: #2196f3;
+  }
 }/*# sourceMappingURL=main.css.map */
