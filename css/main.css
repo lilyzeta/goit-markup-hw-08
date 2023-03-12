@@ -587,17 +587,21 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  width: 370px;
 }
 .project__card-item:hover, .project__card-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  width: 370px;
 }
 .project__card-item:hover {
   transform: translateY(0px);
   transition: transform 350ms ease;
+  width: 370px;
 }
 
 .project__text {
   padding: 20px 24px;
+  width: 370px;
   border-bottom: 1px solid #ececec;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
@@ -624,7 +628,7 @@ img {
   left: 0;
   width: 370px;
   height: 294px;
-  transform: translateY(295px);
+  transform: translateY(-295px);
   background-color: #2196f3;
   opacity: 90%;
   color: #ffffff;
@@ -1151,12 +1155,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 24px;
 }
 @media screen and (min-width: 1200px) {
   .team__social-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 }
 

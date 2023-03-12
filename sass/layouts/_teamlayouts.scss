@@ -7,10 +7,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 24px;
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 }
 .team__item {
