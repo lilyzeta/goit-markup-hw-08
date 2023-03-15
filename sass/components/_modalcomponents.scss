@@ -244,16 +244,16 @@
   fill: $mainbright;
 }
 
-@keyframes modal-animation {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-    scale: (0);
-  }
+// @keyframes modal-animation {
+//   0% {
+//     visibility: hidden;
+//     opacity: 0;
+//     scale: (0);
+//   }
 
-  100% {
-    opacity: 1;
-    visibility: visible;
-    scale: (1);
-  }
-}
+//   100% {
+//     opacity: 1;
+//     visibility: visible;
+//     scale: (1);
+//   }
+// }

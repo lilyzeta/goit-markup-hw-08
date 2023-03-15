@@ -566,42 +566,8 @@ img {
   fill: #ffffff;
 }
 
-@keyframes modal-animation {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-    scale: 0;
-  }
-  100% {
-    opacity: 1;
-    visibility: visible;
-    scale: 1;
-  }
-}
-.project__card-item {
-  background-color: #ffffff;
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc(33.3333333333% - 30px);
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  width: 370px;
-}
-.project__card-item:hover, .project__card-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  width: 370px;
-}
-.project__card-item:hover {
-  transform: translateY(0px);
-  transition: transform 350ms ease;
-  width: 370px;
-}
-
 .project__text {
   padding: 20px 24px;
-  width: 370px;
   border-bottom: 1px solid #ececec;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
@@ -628,7 +594,7 @@ img {
   left: 0;
   width: 370px;
   height: 294px;
-  transform: translateY(-295px);
+  transform: translateY(295px);
   background-color: #2196f3;
   opacity: 90%;
   color: #ffffff;
@@ -644,7 +610,25 @@ img {
   padding-left: 24px;
   padding-right: 24px;
 }
-.project__card-overlay:hover {
+.project__card-overlay {
+  transform: translateY(0px);
+  transition: transform 350ms ease;
+}
+
+.project__card-item {
+  background-color: #ffffff;
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(33.3333333333% - 30px);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.project__card-item:hover, .project__card-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project__card-item {
   transform: translateY(0px);
   transition: transform 350ms ease;
 }
@@ -670,6 +654,13 @@ img {
   background-color: #2196f3;
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project__card-image {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
 }
 
 .services__title {
@@ -1101,13 +1092,6 @@ img {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-}
-
-.project__card-image {
-  position: relative;
-  width: 370px;
-  height: 294px;
-  overflow: hidden;
 }
 
 .services {

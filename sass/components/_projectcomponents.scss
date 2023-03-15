@@ -1,29 +1,5 @@
-.project__card-item {
-  background-color: $mainbright;
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc(100% / 3 - 30px);
-  transition-property: box-shadow;
-  transition-duration: $time;
-  transition-timing-function: $cubic;
-  position: relative;
-  width: 370px;
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-    width: 370px;
-  }
-  &:hover {
-    transform: translateY(0px);
-    transition: transform 350ms ease;
-    width: 370px;
-  }
-}
-
 .project__text {
   padding: 20px 24px;
-  width: 370px;
   border-bottom: 1px solid $bordercolor;
   border-left: 1px solid $bordercolor;
   border-right: 1px solid $bordercolor;
@@ -43,12 +19,16 @@
   letter-spacing: 0.03em;
 }
 .project__card-overlay {
+  & {
+    transform: translateY(0px);
+    transition: transform 350ms ease;
+  }
   position: absolute;
   top: 0;
   left: 0;
   width: 370px;
   height: 294px;
-  transform: translateY(-295px);
+  transform: translateY(295px);
   background-color: $accentbright;
   opacity: 90%;
   color: $mainbright;
@@ -63,12 +43,27 @@
   padding-bottom: 91px;
   padding-left: 24px;
   padding-right: 24px;
-  &:hover {
+}
+.project__card-item {
+  background-color: $mainbright;
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+  transition-property: box-shadow;
+  transition-duration: $time;
+  transition-timing-function: $cubic;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  & {
     transform: translateY(0px);
     transition: transform 350ms ease;
   }
 }
-
 .project__button {
   font-size: 16px;
   font-weight: $midweight;
@@ -92,4 +87,10 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
+}
+.project__card-image {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
 }
