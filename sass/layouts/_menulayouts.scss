@@ -24,6 +24,10 @@
   @media screen and (min-width: 786px) {
     display: none;
   }
+  &hover,
+  &focus {
+    color: $accentbright;
+  }
 }
 .menu__contact-link {
   display: flex;
@@ -32,6 +36,10 @@
   margin-left: 40px;
   @media screen and (min-width: 786px) {
     display: none;
+  }
+  &hover,
+  &focus {
+    color: $accentbright;
   }
 }
 .menu__socials {
