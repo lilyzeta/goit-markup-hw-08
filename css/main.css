@@ -594,7 +594,6 @@ img {
   left: 0;
   width: 370px;
   height: 294px;
-  transform: translateY(295px);
   background-color: #2196f3;
   opacity: 90%;
   color: #ffffff;
@@ -609,10 +608,14 @@ img {
   padding-bottom: 91px;
   padding-left: 24px;
   padding-right: 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project__card-overlay {
-  transform: translateY(0px);
-  transition: transform 350ms ease;
+  transform: translateY(100%);
+}
+.project__card-item:hover .project__card-overlay,
+.project__card-overlay .project__card-item:focus {
+  transform: translate(0%);
 }
 
 .project__card-item {
@@ -624,13 +627,6 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-}
-.project__card-item:hover, .project__card-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.project__card-item {
-  transform: translateY(0px);
-  transition: transform 350ms ease;
 }
 
 .project__button {
@@ -1167,17 +1163,19 @@ img {
   margin-right: 10px;
 }
 
-.menu__container {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  left: 0px;
-  top: 0px;
-  z-index: 999;
-  padding: 30px;
-  background: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  transform: translateX(100%);
+@media screen and (max-width: 480px) {
+  .menu__container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    transform: translateX(100%);
+  }
 }
 
 .menu__container.is-open {
@@ -1286,14 +1284,23 @@ img {
   color: #757575;
 }
 
-.js-close-menu {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 425px;
-  top: 10px;
-  border: none;
-  background-color: #ffffff;
+@media screen and (min-width: 481px) {
+  .js-close-menu {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .js-close-menu {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 425px;
+    top: 10px;
+    border: none;
+    background-color: #ffffff;
+  }
 }
 
 .menu__link {

@@ -20,15 +20,14 @@
 }
 .project__card-overlay {
   & {
-    transform: translateY(0px);
-    transition: transform 350ms ease;
+    transform: translateY(100%);
   }
   position: absolute;
   top: 0;
   left: 0;
   width: 370px;
   height: 294px;
-  transform: translateY(295px);
+
   background-color: $accentbright;
   opacity: 90%;
   color: $mainbright;
@@ -43,6 +42,11 @@
   padding-bottom: 91px;
   padding-left: 24px;
   padding-right: 24px;
+  transition: transform $time $cubic;
+  .project__card-item:hover &,
+  .project__card-item:focus {
+    transform: translate(0%);
+  }
 }
 .project__card-item {
   background-color: $mainbright;
@@ -54,15 +58,15 @@
   transition-timing-function: $cubic;
   position: relative;
 
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-  & {
-    transform: translateY(0px);
-    transition: transform 350ms ease;
-  }
+  // &:hover,
+  // &:focus {
+  //   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  //     1px 4px 6px rgba(0, 0, 0, 0.16);
+  // }
+  // & {
+  //   transform: translateY(0px);
+  //   transition: transform 350ms ease;
+  // }
 }
 .project__button {
   font-size: 16px;
